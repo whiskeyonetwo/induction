@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adding CSS</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+      alert("Welcome to Will's page!");
+    </script>
+    <link rel="icon" type="image/x-icon" href="/images/unicorn.png">
+    
+</head>
+<body>
+
+    <section id="heading">
+        <h1>Will's Profile</h1>
+    </section>
+
+    <section id="intro">
+        <h2>About</h2>
+        <p>This is the section about me. The picture is not me. 
+            I like surfing, climbing and drinking coffee.</p>
+        <img src="images/surf.jpeg" title="Surfer">
+    
+        <h2>Fun Facts!</h2>
+        <p>This is not that funny.</p>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <h3>Project 1: Simple ToDo App</h3>
+        <button class="button" role="project1">Simple ToDo List</button>
+        <h3>Project 2: Simple Caluculator App</h3>
+        <button class="button" role="project1">Calculator App</button>
+    </section>
+
+    <section id="contacts">
+    <h2>Contact Details</h2>
+    <h3>Email: <a href="mailto:whiskeyonetwo@proton.me">whiskeyonetwo@proton.me</a></h3>
+    
+    <h3>Submit message:</h3>
+    <form class="form-container">
+        <div class="form-group">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="firstname">
+        </div>
+
+        <div class="form-group">
+        <label for="sname">Surname:</label>
+        <input type="text" id="sname" name="surname">
+        </div>
+
+        <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        </div>
+        
+        <br><br>
+        
+        <label for="message">Message:</label>  
+        <textarea id="message" name="message" rows="4"></textarea>
+        
+        <br><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+    </section>      
+
+</body>
+
+</html>
