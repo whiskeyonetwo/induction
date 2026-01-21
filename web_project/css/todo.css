@@ -1,0 +1,152 @@
+/* 1. GLOBAL */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. BASE STYLES */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4),
+            rgba(255, 255, 255, 0.4)), url("/web_project/images/background.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1, h2 {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    
+}
+
+p {
+    width: 50%;
+    max-width: 600px;
+    margin-bottom: 1rem;
+    padding: 0 1rem; /* Added padding since global margin is 0 */
+}
+
+/* 3. LAYOUT COMPONENTS */
+nav, section, footer {
+    padding-top: 1rem;
+}
+
+nav a {
+    margin-right: 0.5rem;
+}
+
+.navElement {
+    margin-left: 1rem;
+}
+
+#closePage {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+#closePage:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* 5. TO-DO LIST STYLES */
+.todoInputRow {
+    display: flex; 
+    gap: 10px;
+    width: 50%;
+    margin: 1rem;
+}
+
+#myInput {
+    flex: 1;
+    margin-bottom: 0; 
+    font-size: 16px;
+    padding-left: 1rem;
+    border: none;
+    border-radius: 6px;
+}
+
+.todoAddBtn {
+    background-color: rgba(255, 255, 255, 0.8);;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.todoAddBtn:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.ulist {
+    list-style-type: none;
+    width: 50%;
+    margin: 1rem;
+}
+
+.ulist li {
+    position: relative;
+    padding: 10px 20px 10px 40px; 
+    margin-bottom: 4px;
+    background-color: #eee;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+    user-select: none;
+}
+
+.ulist li:nth-child(odd) {
+    background-color: #cacaca;
+}
+
+.ulist li:hover {
+    background-color: #ddd;
+}
+
+/* Checked items */
+.ulist li.checked {
+    background-color: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+.ulist li.checked::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 40%;
+    transform: rotate(45deg);
+    width: 7px;
+    height: 15px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 5px;
+    font-size: 18px;
+    color: #555;
+    line-height: 1;
+    border-radius: 5px;
+}
+
+.close:hover {
+    background-color: #ff6b6b;
+    color: white;
+}

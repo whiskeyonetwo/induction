@@ -1,0 +1,119 @@
+
+/* Reset */
+* {
+    box-sizing: border-box;
+}
+/* Heading */
+h1 {
+    margin-left: 1rem;  
+}
+/* Navigation */
+nav {
+    padding: 1rem;
+}
+
+nav a {
+    margin-right: 0.5rem;
+}
+
+/* Page */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4),
+            rgba(255, 255, 255, 0.4)),url("/web_project/images/background.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Sections */
+section {
+    padding: 1rem;
+}
+
+/* Headings */
+h1,
+h2 {
+    margin-bottom: 1rem;
+}
+
+/* Paragraphs */
+p {
+            width: 50%;
+            max-width: 600px;
+            margin-bottom: 1rem;
+}
+
+footer {
+    padding: 1rem;
+}
+
+/* Images */
+img {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+
+/* Buttons */
+button {
+    padding: 0.5rem 1rem;
+    box-shadow: none;  
+    text-shadow: none;
+    border: none;      
+    outline: none;
+    border-radius: 6px;
+}
+
+/* Form container */
+form {
+    width: 50%;
+    max-width: 600px;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+/* Inputs */
+input,
+textarea {
+    width: 85%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+/* Message box height */
+textarea {
+    min-height: 120px;
+}
+
+/* Submit / reset buttons */
+input[type="submit"],
+input[type="reset"] {
+    width: auto;
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+}
+
+/* All page nav link buttons */
+.button-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+
+    text-decoration: none;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 4px;
+}
+
+.button-link:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+

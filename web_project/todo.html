@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="./css/todo.css" />
+    <script src="./js/todo.js" defer></script>
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+</head>
+<body>
+    <!-- Title and page navigation -->
+    <h1 id="top">ToDo List</h1>
+    <nav>
+        <button type="button" id="closePage" class="navElement">Close Page</button>
+    </nav>
+
+    <script>
+      document
+        .getElementById("closePage")
+        .addEventListener("click", function () {
+          window.close();
+        });
+    </script>
+
+    <section id="todo" class="inputSection">
+        <h2>My To Do List</h2>
+
+        <div id="myinput" class="todoInputRow">
+            <input type="text" id="myInput" placeholder="Title...">
+            <span onclick="newElement()" class="todoAddBtn">Add</span>
+        </div>
+        
+        <ul id="myUL" class="ulist">
+            
+        </ul>
+    </section>
+
+    <footer>
+      <p>Copyright Will 2026</p>
+      <a href="#top" class="navElement">Top of Page</a>
+    </footer>
+
+</body>
+</html>
